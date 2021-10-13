@@ -27,6 +27,7 @@ Halo dunia
 ```
 
 # Pengantar Bahasa C
+
 Bahasa C merupakan general-purpose, procedural, imperative computier programming language yang di develop pada tahun 1973 oleh Dennis M. Ritchie di Bell Telephone Laboratories untuk operator sistem UNIX
 
 Keuntungan menggunakan bahasa C, yaitu:
@@ -35,3 +36,42 @@ Keuntungan menggunakan bahasa C, yaitu:
  - Poduk program yang efisien
  - Menghendel pada aktivitas di low-level
  - Banyak komputer platform yang support
+
+Perangkat yang dibuthkan untuk menjalankan C, yaitu:
+ - Text Editor, yang digunkan untuk menulis program (disini kita menggunakan Visual Studio Code)
+ - C Compiler, yang digunkan untuk mengkompile program dari source yang ditulis oleh human (kita) lalu diterjemahkan kedalam bahasa mesin, dan oleh CPU akan di proses  per intruksi.
+
+# Stuktur Bahasa C
+
+Beberapa bagian dasar dari program C
+ - Preprocessor Commands
+ - Function
+ - Variables
+ - Statements & Expressions
+ - Comments
+ 
+Berikut Contoh code
+
+```c
+#include <stdio.h>
+
+int main() {
+   /* my first program in C */
+   printf("Halo Dunia! \n");
+   
+   return 0;
+}
+```
+
+Penjelasan:
+ - Baris pertama `#include <stdio.h>` merupakan preporcessor command, dimana digunkan untuk kompiler C untuk memanggil library `stdio.h` sebelum melakukan proses kompilasi.
+ - Baris kedua `int main()` merupakan **main function** dimana untuk memproses awal program.
+ - Baris kertiga `\*...*\` merupkan **comments** yang digunakan untuk memberi keterangan, comments tidak akan diproses pada program C. Comments juga bisa menggunakan `*\\*` diawal keterangan.
+ - Baris keempat `*printf(...)*` merupakan perintah display keluaran/output.
+ - Baris kelima `return 0`, untuk mengakhiri main function dan memberikan nilai 0 (sebagai tanda program terlesaikan hingga akhir).
+ - Pada bahasa C setiap fungsi selalu dibuka dan ditutup dengan tanda kurung kurawal `{...}`.
+ - dan tiap statments atau variable diakhiri  semicolons `;`.
+
+# Tipe Data
+
+Jenis Tipe Data pada bahasa C:
